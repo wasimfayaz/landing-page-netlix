@@ -10,7 +10,7 @@
     height: 100vh;
     padding: 0;
     background-color: violet;
-    background-image: url(/landing-page-netflix/images/netflix-bg.jpg);
+    background-image: url(images/netflix-bg.jpg);
     background-position:inherit;
     background-size: 100%;
 }
