@@ -4,13 +4,16 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+body{
+    background-color: black;
+}
 .container-fluid{
+    display: block;
     width: 100%;
     height: 100vh;
     padding: 0;
     background-color: violet;
-    background-image: url(images/netflix-bg.jpg);
+    background-image: url(images/netflix-bg.jpg); */
     background-position:inherit;
     background-size: 100%;
 }
@@ -28,8 +31,13 @@
     /* background-color: black; */
     padding: 10px 24px;
 }
-.nav-1 img{
+.img1{
     width: 130px;
+    height: 80px;
+    /* background-color: violet; */
+    background-image: url(images/netflix-logo.png);
+    background-position:inherit;
+    background-size: 100%;
 }
 #btn-1{
     background-color: #db0000;
@@ -39,7 +47,9 @@
     color: white;
     border-radius: 2px;
 }
-
+#btn-pv{
+    display: none;
+}
 /* middle text */
 .container3{
     width: 100%;
@@ -86,4 +96,106 @@
 
 }
 
+/*media queries here */
+@media screen and (max-width: 500px){
+    .container-fluid{
+        display: block;
+        width: 100%;
+        height: 600px;
+        padding: 0;
+        background-color: violet;
+        background-image: url(images/netflix-bg.jpg);
+        background-position:initial;
+        background-size: 100%;
+    }
+    .nav-1{
+        padding: 20px;
+        justify-content: flex-end;
+    }
+    .img1{
+        width: 20px;
+        height: 35px;
+    background-image: url(images/netflix-logo2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    .mail-det input{
+        height: 50px;
+        width: 200px;
+        padding: 10px 30px;
+        border: none;
+    
+    }
+    #btn-1{
+        background-color:#db000000;
+        border: none;
+        padding: 5px 17px;
+        font-size: 12px;
+        color: white;
+        border-radius: 2px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    #btn-pv{
+        display: block;
+        background-color:#db000000;
+        border: none;
+        padding: 5px 17px;
+        font-size: 12px;
+        color: white;
+        border-radius: 2px;
+        font-size: 13px;
+        font-weight: 700;
+        margin-left: auto;
 
+    }
+
+    .container3{
+        padding: 0;
+        margin-top: 180px;
+    }
+    .container3 h3{
+        text-align: center;
+        font-size: 30px;
+        line-height: 32px;
+        word-spacing: 3px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .container2{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.739);
+    }
+
+    .container3 h6{
+        display: none;
+    }
+    .container3 p{
+        text-align: center;
+    }
+    .mail-det{
+        height: 40px;
+        width: 100%;
+        border: none;
+    
+    }
+    .mail-det input{
+        display: none;
+    
+    }
+    #btn-2{
+        width: 100%;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px){
+    .mail-det input{
+        width: 250px;
+    }
+    #btn-2{
+        width: 120px;
+    }
+}
